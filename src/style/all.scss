@@ -1,0 +1,23 @@
+@import "_reset";
+
+$primary-color: rgb(23, 202, 98);
+
+h1,
+div {
+  height: 100px;
+  width: 200px;
+}
+
+h1 {
+  background-color: rgba(28, 193, 214, 0.808);
+}
+
+.name {
+  p {
+    background-color: $primary-color;
+  }
+}
+
+.clicked {
+  background-color: yellow;
+}
