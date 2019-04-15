@@ -1,21 +1,29 @@
 const path = require("path");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    bundle: "./src/scripts/index.js",
-    styles: "./src/style/all.scss"
+    bundle: ["./src/scripts/index.js", "./src/style/all.scss"]
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js"
   },
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
     compress: true,
     port: 8080
   },
-  plugins: [new MiniCssExtractPlugin()],
+  plugins: [
+    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      minify: true,
+      inject: "head", //ради интереса
+      chunks: ["bundle"],
+      template: "./src/index.html",
+      favicon: "./src/images/unnamed.png"
+    })
+  ],
   module: {
     rules: [
       {
@@ -27,8 +35,6 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        include: __dirname + "./src/style",
-        exclude: [/(node_modules)/, __dirname + "./src/scripts"],
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"]
       }
     ]
