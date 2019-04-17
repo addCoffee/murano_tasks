@@ -4,7 +4,13 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: {
-    bundle: ["./src/scripts/index.js", "./src/style/all.scss"]
+    bundle: [
+      "./src/scripts/index.js",
+      "./src/style/all.scss",
+      "./src/style/header.scss",
+      "./src/style/main.scss",
+      "./src/style/mediaQuery.scss"
+    ]
   },
   output: {
     path: path.resolve(__dirname, "dist"),

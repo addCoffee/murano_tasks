@@ -1,0 +1,92 @@
+@import "colors";
+
+.main {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 120px 80px 120px;
+  box-sizing: border-box;
+  .main__header,
+  .main__description {
+    width: 60%;
+    text-align: center;
+    padding: 5px;
+    box-sizing: border-box;
+  }
+
+  .main__header {
+    font-weight: 400;
+    font-size: 40px;
+  }
+
+  .main__description {
+    font-size: 20px;
+    font-weight: 100;
+    color: $gray-color;
+  }
+  .tariffs {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-between;
+    .tariffs__tariff {
+      margin: 45 30 45 30;
+      display: flex;
+      flex-direction: column;
+      width: 33%;
+      justify-content: flex-start;
+      align-items: center;
+      border: solid 2px #e0e0e0;
+      border-radius: 5px;
+      overflow: hidden;
+
+      .tariffs__button {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $primary-color;
+        padding: 10px;
+        margin: 10px;
+        color: white;
+        width: 80%;
+        border-radius: 5px;
+        box-sizing: border-box;
+        text-align: center;
+        font-size: 15px;
+      }
+      .tariffs_button-sign {
+        border: solid 2px $primary-color;
+        color: $primary-color;
+        background-color: white;
+      }
+      .tariffs__name {
+        background-color: #f7f7f7;
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+        border-bottom: solid 2px #e0e0e0;
+        font-size: 20px;
+      }
+      .tariffs__price-per {
+        padding: 5px;
+        .tariffs_price {
+          font-size: 30px;
+        }
+        .tariffs_period {
+          font-size: 20px;
+          color: $gray-color;
+        }
+      }
+      .tariffs__description {
+        list-style-type: none;
+        text-align: center;
+        font-size: 10px;
+        .tariffs__description-decor {
+          padding: 2px;
+        }
+      }
+    }
+  }
+}

@@ -1,15 +1,81 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Document</title>
   </head>
   <body>
-    <h1>
-      Hello world!
-    </h1>
-    <div class="name">
-      User Kirill
-    </div>
+    <header class="header">
+      <div class="header__company">
+        Company name
+      </div>
+      <nav class="menu">
+        <a class="menu__items">Features</a>
+        <a class="menu__items">Enterprise</a>
+        <a class="menu__items">Support</a>
+        <a class="menu__items">Pricing</a>
+        <a class="menu__items menu_button-sign">Sign up</a>
+        <div class="menu__media">
+          <img alt="mm" src="src/images/menu_icon.png"> </img>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <p class="main__header">
+        Pricing
+      </p>
+
+      <p class="main__description">
+        Quickly build an effective pricing table for your potential customers
+        with this Bootstrap example. It's built wuth default Bootstrap
+        components and utilities wuth lil customization
+      </p>
+
+      <ul class="tariffs">
+        <li class="tariffs__tariff">
+          <p class="tariffs__name">Free</p>
+          <div class="tariffs__price-per">
+            <span class="tariffs_price">$0 </span>
+            <span class="tariffs_period">/ mo</span>
+          </div>
+          <ul class="tariffs__description">
+            <li class="tariffs__description-decor">10 users included</li>
+            <li class="tariffs__description-decor">2 GB of storage</li>
+            <li class="tariffs__description-decor">Email support</li>
+            <li class="tariffs__description-decor">Help center access</li>
+          </ul>
+          <a class="tariffs__button tariffs_button-sign">Sign up for free</a>
+        </li>
+        <li class="tariffs__tariff">
+          <p class="tariffs__name">Pro</p>
+          <div class="tariffs__price-per">
+            <span class="tariffs_price">$15 </span>
+            <span class="tariffs_period">/ mo</span>
+          </div>
+          <ul class="tariffs__description">
+            <li class="tariffs__description-decor">20 users included</li>
+            <li class="tariffs__description-decor">10 GB of storage</li>
+            <li class="tariffs__description-decor">Priority email support</li>
+            <li class="tariffs__description-decor">Help center access</li>
+          </ul>
+          <a class="tariffs__button">Get started</a>
+        </li>
+        <li class="tariffs__tariff">
+          <p class="tariffs__name">Enterprise</p>
+          <div class="tariffs__price-per">
+            <span class="tariffs_price">$29 </span>
+            <span class="tariffs_period">/ mo</span>
+          </div>
+          <ul class="tariffs__description">
+            <li class="tariffs__description-decor">30 users included</li>
+            <li class="tariffs__description-decor">15 GB of storage</li>
+            <li class="tariffs__description-decor">Phone and email support</li>
+            <li class="tariffs__description-decor">Help center access</li>
+          </ul>
+          <a class="tariffs__button">Contact us</a>
+        </li>
+      </ul>
+    </main>
   </body>
 </html>

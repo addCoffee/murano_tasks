@@ -1,0 +1,21 @@
+@media all and (max-width: 992px) {
+  .tariffs {
+    flex-direction: column;
+    .tariffs__tariff {
+      width: 100%; //не лабает. Хотя без медиа-запроса - работает.
+    }
+  }
+
+  /*.menu {
+    justify-content: flex-end;
+  }
+
+  .menu__media {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .menu__items {
+    display: none;
+  }*/
+}
