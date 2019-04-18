@@ -1,0 +1,77 @@
+@import "colors";
+
+//решил слишком уж не дробить на файлы, стили tariffs мало занимают.
+
+.tariffs {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+
+  &__card {
+    margin: 45px 30px 45px 30px;
+    width: 33%;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid 2px #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    width: 80%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  &--button-sign {
+    border: solid 2px $primary-color;
+    color: $primary-color;
+    background-color: white;
+  }
+
+  &__name {
+    background-color: #f7f7f7;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    border-bottom: solid 2px #e0e0e0;
+    font-size: 20px;
+  }
+
+  &__price-per {
+    padding: 5px;
+
+    &--price {
+      font-size: 30px;
+    }
+
+    &--period {
+      font-size: 20px;
+      color: $gray-color;
+    }
+  }
+
+  &__description {
+    list-style-type: none;
+    text-align: center;
+    font-size: 10px;
+    &--decor {
+      padding: 2px;
+    }
+  }
+}

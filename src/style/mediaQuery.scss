@@ -1,21 +1,18 @@
 @media all and (max-width: 992px) {
   .tariffs {
     flex-direction: column;
-    .tariffs__tariff {
-      width: 100%; //не лабает. Хотя без медиа-запроса - работает.
+    &__card {
+      width: 100%;
     }
   }
 
-  /*.menu {
-    justify-content: flex-end;
-  }
-
-  .menu__media {
-    display: block;
-    padding: 10px;
-    cursor: pointer;
-  }
-  .menu__items {
+  /*
+  .menu__item {
     display: none;
-  }*/
+  }
+                                            //После реакта
+  .menu__adaptive-hidden-button {
+    display: block;
+  }
+  */
 }

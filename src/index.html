@@ -1,7 +1,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Document</title>
   </head>
   <body>
@@ -9,71 +9,71 @@
       <div class="header__company">
         Company name
       </div>
-      <nav class="menu">
-        <a class="menu__items">Features</a>
-        <a class="menu__items">Enterprise</a>
-        <a class="menu__items">Support</a>
-        <a class="menu__items">Pricing</a>
-        <a class="menu__items menu_button-sign">Sign up</a>
-        <div class="menu__media">
-          <img alt="mm" src="src/images/menu_icon.png"> </img>
+      <nav class="header__menu menu">
+        <a class="menu__item">Features</a>
+        <a class="menu__item">Enterprise</a>
+        <a class="menu__item">Support</a>
+        <a class="menu__item">Pricing</a>
+        <a class="menu__item menu--button-sign">Sign up</a>
+        <div class="menu__adaptive-hidden-button">
+          <img alt="menu button" src="menu_icon.png"> </img>
         </div>
       </nav>
     </header>
 
     <main class="main">
       <p class="main__header">
-        Pricing
+        Pricing 
       </p>
 
       <p class="main__description">
         Quickly build an effective pricing table for your potential customers
         with this Bootstrap example. It's built wuth default Bootstrap
-        components and utilities wuth lil customization
+        components and utilities wuth lil customization.
       </p>
 
-      <ul class="tariffs">
-        <li class="tariffs__tariff">
-          <p class="tariffs__name">Free</p>
-          <div class="tariffs__price-per">
-            <span class="tariffs_price">$0 </span>
-            <span class="tariffs_period">/ mo</span>
+      <ul class="main__tariffs tariffs">
+        <li class="tariffs__card card">
+          <p class="card__name">Free</p>
+          <div class="card__price-per">
+            <span class="card__price-per--price">$0 </span>
+            <span class="card__price-per--period">/ mo</span>
           </div>
-          <ul class="tariffs__description">
-            <li class="tariffs__description-decor">10 users included</li>
-            <li class="tariffs__description-decor">2 GB of storage</li>
-            <li class="tariffs__description-decor">Email support</li>
-            <li class="tariffs__description-decor">Help center access</li>
+          <ul class="card__description">
+            <li class="card__description--decor">10 users included</li>
+            <li class="card__description--decor">2 GB of storage</li>
+            <li class="card__description--decor">Email support</li>
+            <li class="card__description--decor">Help center access</li>
           </ul>
-          <a class="tariffs__button tariffs_button-sign">Sign up for free</a>
+          <a class="card__button card--button-sign">Sign up for free</a>
         </li>
-        <li class="tariffs__tariff">
-          <p class="tariffs__name">Pro</p>
-          <div class="tariffs__price-per">
-            <span class="tariffs_price">$15 </span>
-            <span class="tariffs_period">/ mo</span>
+        <li class="tariffs__card card">
+          <p class="card__name">Pro</p>
+          <div class="card__price-per">
+            <span class="card__price-per--price">$15 </span>
+            <span class="card__price-per--period">/ mo</span>
           </div>
-          <ul class="tariffs__description">
-            <li class="tariffs__description-decor">20 users included</li>
-            <li class="tariffs__description-decor">10 GB of storage</li>
-            <li class="tariffs__description-decor">Priority email support</li>
-            <li class="tariffs__description-decor">Help center access</li>
+          <ul class="card__description">
+            <li class="card__description--decor">20 users included</li>
+            <li class="card__description--decor">10 GB of storage</li>
+            <li class="card__description--decor">Priority email support</li>
+            <li class="card__description--decor">Help center access</li>
           </ul>
-          <a class="tariffs__button">Get started</a>
+          <a class="card__button">Get started</a>
         </li>
-        <li class="tariffs__tariff">
-          <p class="tariffs__name">Enterprise</p>
-          <div class="tariffs__price-per">
-            <span class="tariffs_price">$29 </span>
-            <span class="tariffs_period">/ mo</span>
+        <li class="tariffs__card card">
+          <p class="card__name">Enterprise</p>
+          <div class="card__price-per">
+            <span class="card__price-per--price">$29 </span>
+            <span class="card__price-per--period">/ mo</span>
           </div>
-          <ul class="tariffs__description">
-            <li class="tariffs__description-decor">30 users included</li>
-            <li class="tariffs__description-decor">15 GB of storage</li>
-            <li class="tariffs__description-decor">Phone and email support</li>
-            <li class="tariffs__description-decor">Help center access</li>
+          <ul class="card__description">
+            <li class="card__description--decor">30 users included</li>
+            <li class="card__description--decor">15 GB of storage</li>
+            <li class="card__description--decor">Phone and email support</li>
+            <li class="card__description--decor">Help center access</li>
           </ul>
-          <a class="tariffs__button">Contact us</a>
+          <a class="card__button">Contact us</a>
         </li>
       </ul>
     </main>
