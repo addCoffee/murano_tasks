@@ -1,9 +1,9 @@
 @import "_reset";
-@import "header";
-@import "main";
-@import "mediaQuery";
-@import "tariffs-card";
-@import "menu";
+@import "_header";
+@import "_main";
+@import "_tariffs-card";
+@import "_menu";
+@import "_media-query";
 
 * {
   font-family: "Arial", Georgia, Serif;

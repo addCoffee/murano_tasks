@@ -1,7 +1,10 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -14,16 +17,16 @@
         <a class="menu__item">Enterprise</a>
         <a class="menu__item">Support</a>
         <a class="menu__item">Pricing</a>
-        <a class="menu__item menu--button-sign">Sign up</a>
-        <div class="menu__adaptive-hidden-button">
-          <img alt="menu button" src="menu_icon.png"> </img>
-        </div>
+        <a class="menu__item menu__item--button-sign">Sign up</a>
+        <button class="menu__mobile-button">
+          <img alt="menu button" src="menu_icon.png" height="30" width="30" />
+        </button>
       </nav>
     </header>
 
     <main class="main">
       <p class="main__header">
-        Pricing 
+        Pricing
       </p>
 
       <p class="main__description">
@@ -32,50 +35,56 @@
         components and utilities wuth lil customization.
       </p>
 
-      <ul class="main__tariffs tariffs">
-        <li class="tariffs__card card">
-          <p class="card__name">Free</p>
-          <div class="card__price-per">
+      <div class="main__tariffs tariffs">
+        <ul class="tariffs__card card">
+          <li class="card__name">Free</li>
+          <li class="card__price-per">
             <span class="card__price-per--price">$0 </span>
             <span class="card__price-per--period">/ mo</span>
-          </div>
-          <ul class="card__description">
-            <li class="card__description--decor">10 users included</li>
-            <li class="card__description--decor">2 GB of storage</li>
-            <li class="card__description--decor">Email support</li>
-            <li class="card__description--decor">Help center access</li>
-          </ul>
-          <a class="card__button card--button-sign">Sign up for free</a>
-        </li>
-        <li class="tariffs__card card">
-          <p class="card__name">Pro</p>
-          <div class="card__price-per">
+          </li>
+          <li>
+            <ul class="card__description">
+              <li class="card__description--decor">10 users included</li>
+              <li class="card__description--decor">2 GB of storage</li>
+              <li class="card__description--decor">Email support</li>
+              <li class="card__description--decor">Help center access</li>
+            </ul>
+          </li>
+          <li class="card__button card__button--sign">Sign up for free</li>
+        </ul>
+        <ul class="tariffs__card card">
+          <li class="card__name">Pro</li>
+          <li class="card__price-per">
             <span class="card__price-per--price">$15 </span>
             <span class="card__price-per--period">/ mo</span>
-          </div>
-          <ul class="card__description">
-            <li class="card__description--decor">20 users included</li>
-            <li class="card__description--decor">10 GB of storage</li>
-            <li class="card__description--decor">Priority email support</li>
-            <li class="card__description--decor">Help center access</li>
-          </ul>
-          <a class="card__button">Get started</a>
-        </li>
-        <li class="tariffs__card card">
-          <p class="card__name">Enterprise</p>
-          <div class="card__price-per">
+          </li>
+          <li>
+            <ul class="card__description">
+              <li class="card__description--decor">20 users included</li>
+              <li class="card__description--decor">10 GB of storage</li>
+              <li class="card__description--decor">Priority email support</li>
+              <li class="card__description--decor">Help center access</li>
+            </ul>
+          </li>
+          <li class="card__button">Get started</li>
+        </ul>
+        <ul class="tariffs__card card">
+          <li class="card__name">Enterprise</li>
+          <li class="card__price-per">
             <span class="card__price-per--price">$29 </span>
             <span class="card__price-per--period">/ mo</span>
-          </div>
-          <ul class="card__description">
-            <li class="card__description--decor">30 users included</li>
-            <li class="card__description--decor">15 GB of storage</li>
-            <li class="card__description--decor">Phone and email support</li>
-            <li class="card__description--decor">Help center access</li>
-          </ul>
-          <a class="card__button">Contact us</a>
-        </li>
-      </ul>
+          </li>
+          <li>
+            <ul class="card__description">
+              <li class="card__description--decor">30 users included</li>
+              <li class="card__description--decor">15 GB of storage</li>
+              <li class="card__description--decor">Phone and email support</li>
+              <li class="card__description--decor">Help center access</li>
+            </ul>
+          </li>
+          <li class="card__button">Contact us</li>
+        </ul>
+      </div>
     </main>
   </body>
 </html>

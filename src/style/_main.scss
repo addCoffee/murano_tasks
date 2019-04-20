@@ -1,11 +1,11 @@
-@import "colors";
+@import "_colors";
 
 .main {
   display: flex;
   width: 100%;
   align-items: center;
   flex-direction: column;
-  padding: 80px 120px 80px 120px;
+  padding: 80px 80px 80px 80px;
   box-sizing: border-box;
   &__header,
   &__description {

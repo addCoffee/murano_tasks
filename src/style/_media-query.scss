@@ -1,0 +1,59 @@
+@media all and (max-width: 768px) {
+  .main {
+    padding: 20px 10px 20px 10px;
+    z-index: 1;
+  }
+
+  .header {
+    flex-direction: row-reverse;
+    position: relative;
+    z-index: 10;
+    &__company {
+      display: flex;
+      justify-content: flex-end;
+      width: 85%;
+    }
+    &__menu {
+      width: 70px;
+    }
+  }
+
+  .menu {
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white; //чтобы заметно было, что всё-таки наслоение заработало
+    height: auto;
+    color: blue;
+
+    &__item {
+      display: none;
+    }
+
+    &__mobile-button {
+      cursor: pointer;
+      display: flex;
+      border: none;
+      margin: 20px;
+      box-sizing: border-box;
+      background-color: white;
+    }
+  }
+
+  .tariffs {
+    flex-direction: column;
+    align-items: center;
+    &__card {
+      margin: 15px 0px 15px 0px;
+    }
+  }
+
+  .menu__item--hidden {
+    display: block;
+  }
+
+  .menu__item--button-sign {
+    display: none;
+  }
+}
