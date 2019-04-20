@@ -5,7 +5,7 @@ import ContainerAll from "./components/ContainerAll.jsx";
 
 ReactDOM.render(<ContainerAll />, document.getElementById("root"));
 
-/*window.onload = function() {
+window.onload = function() {
   let menu_icon = document.querySelectorAll(".menu__item");
   let menu_style = document.querySelector(".menu");
 
@@ -14,4 +14,4 @@ ReactDOM.render(<ContainerAll />, document.getElementById("root"));
       i.classList.toggle("menu__item--hidden");
     }
   };
-};*/
+};
