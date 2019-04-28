@@ -11,7 +11,7 @@ const ajax = {
       {
         name: "Free",
         price: 0,
-        period: "\\ mo",
+        period: "mo",
         description: [
           "10 users included",
           "2 GB of storage",
@@ -22,7 +22,7 @@ const ajax = {
       {
         name: "Pro",
         price: 15,
-        period: "\\ mo",
+        period: "mo",
         description: [
           "20 users included",
           "10 GB of storage",
@@ -33,7 +33,7 @@ const ajax = {
       {
         name: "Enterprise",
         price: 29,
-        period: "\\ mo",
+        period: "mo",
         description: [
           "30 users included",
           "15 GB of storage",

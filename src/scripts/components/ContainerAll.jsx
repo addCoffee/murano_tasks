@@ -7,8 +7,12 @@ class ContainerAll extends Component {
   render() {
     return (
       <div>
-        <Header companyName={ajax.header.companyName} />
-        <Main header={ajax.main.header} description={ajax.main.description} />
+        <Header response={ajax} companyName={ajax.header.companyName} />
+        <Main
+          response={ajax}
+          header={ajax.main.header}
+          description={ajax.main.description}
+        />
       </div>
     );
   }
